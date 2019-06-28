@@ -224,17 +224,17 @@ label{
 }
 @media(max-width:425px){
 	.boxaboutPicturemobile{
-		width: 100vw;
+		min-width: 500px;
 	}
 }
 .actionbox{
 	background-image: url(assets/fundo-acoes.jpg);
-	width: 100vw;
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	min-width: 500px;
 }
 @media(max-width:768px){
 	.actionbox{
@@ -372,6 +372,7 @@ label{
 	.impactbox{
 		flex-direction: column;
 		align-items: center;
+		min-width: 500px;
 	}
 }
 .impactbox__impacto{
@@ -518,6 +519,11 @@ label{
 	width: 100%;
 	background-color: #85C226;
 }
+@media(max-width: 425px){
+	.doyounowbox{
+		min-width: 500px;
+	}
+}
 .doyounowbox__box1{
 	display: flex;
     width: 500px;
@@ -558,18 +564,26 @@ label{
 	width: 30vw;
 	height: 300px;
 	padding: 10px;
-}
+}    
 @media(max-width: 768px){
 	.doyounowbox__picture--vocesabia{
-		width: auto;
-		height: 300px;
-   	 	margin: 20px 0 0 0;
+		width: 80vw;
+    	height: 290px;
+    	margin: 20px 0 0 10vw;  
 	}
 }
-@media(max-width: 768px){
+@media(max-width: 425px){
 	.doyounowbox__picture--vocesabia{
-		width: auto;
-   	 	margin: 20px 0 0 0;
+		width: 80vw;
+    	height: 290px;
+    	margin: 20px 0 0 20vw; 
+	}
+}
+@media(max-width: 320px){
+	.doyounowbox__picture--vocesabia{
+	width: 100vw;
+    height: 300px;
+    margin: 20px 0 0 20vw;
 	}
 }
 .boxheader__subnav{
@@ -580,15 +594,26 @@ label{
 	display: flex;
 	justify-content: flex-end;
 }
+@media (max-width: 860px){
+	.boxheader__subnav{
+		display: none;
+	}
+}
 .boxheader__nav{
 	padding: 20px;
 	color: #E67816;
 }
 .boxmain{
-	height: 67vh;
+	width: 100%;
+	height: 75vh;
 	display: flex;
 	justify-content: space-between;
 	background-image: url(assets/fundohome.jpg);
+}
+@media(max-width: 768px){
+	.boxmain{
+		flex-wrap: wrap;
+	}
 }
 .boxmain__text{
 	width: 220px;
@@ -600,7 +625,7 @@ label{
 .boxmain__text--title{
 	font-size: 41px;
 	color: #fff;
-	margin-top: 40px;
+	margin: 40px 0 0 0;
 	padding: 20px 0px 10px 25px;
 }
 .boxmain__video{
@@ -609,7 +634,7 @@ label{
 .antecedentesboxmain{
 	display: flex;
 	justify-content: space-between;
-	height: 500px;
+	height: 85vh;
 	background: #333333;
 }
 .antecedentesboxmain__text{
@@ -630,9 +655,7 @@ label{
 	padding: 40px 20px 30px 20px;
 }
  .antecedentesboxmain__picture--photo{
- 	width: 500px;
- 	height: 350px;
- 	padding:20px;
+ 	width: 35vw;
  }
   .objetivosbox{
  	display: flex;
@@ -999,7 +1022,7 @@ label{
  	width: 20px;
  	margin: 10px;
 }
-.testando{
+.boxquiz__content{
 	width: 150px;
     height: 200px;
     text-align: center;
@@ -1023,14 +1046,43 @@ label{
 		flex-direction: column;
 	}
 }
+@media(max-width: 425px){
+	.firstboxFooter{
+		min-width: 500px;
+	}
+}
 .firstboxFooter__title{
 	width: 30vw;
 	font-size: 25px;
+}
+@media(max-width: 768px){
+	.firstboxFooter__title{
+		width: 100vw;
+		text-align: center;
+	}
+}
+@media(max-width: 425px){
+	.firstboxFooter__title{
+		width: 500px;
+		font-size: 20px;
+	}
+}
+@media(max-width: 320px){
+	.firstboxFooter__title{
+		font-size: 25px;
+	}
 }
 .firstboxFooter__picture{
 	width: 30px;
 	height: 30px;
 	padding: 5px;
+}
+.firstboxFooter__projects{
+}
+@media(max-width: 768px){
+	.firstboxFooter__projects{
+		text-align: center;
+	}
 }
 .firstboxFooter__paragraphcolor{
 	color: #E67816;
@@ -1046,9 +1098,25 @@ label{
 	display: flex;
 	flex-direction: column;
 }
+@media(max-width: 768px){
+	.firstboxFooter__contato{
+		text-align: center;
+		align-items: center;
+	}
+}
 .firstboxFooter__parceiros--first{
 	width:50%;
 	color: #E67816;
+}
+@media(max-width: 768px){
+	.firstboxFooter__parceiros--first{
+		margin: 0 0 0 150px;
+	}
+}
+@media(max-width: 425px){
+	.firstboxFooter__parceiros--first{
+		margin: 0 0 0 50px;
+	}
 }
 .firstboxFooter__parceiros--second{
 	color: #E67816;
@@ -1057,9 +1125,19 @@ label{
 	font-size: 10px;
 	line-height: 3;
 }
+@media(max-width: 425px){
+	.firstboxMain__paragraph--size{
+		font-size: 15px;
+	}
+}
 .firstboxMain__paragraph--size2{
 	font-size: 10px;
 	width: 200px;
+}
+@media(max-width: 425px){
+	.firstboxMain__paragraph--size2{
+		font-size: 15px;
+	}
 }
 .firstboxMain__paragraph--redes{
 	padding: 5px;
